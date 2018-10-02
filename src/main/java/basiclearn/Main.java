@@ -43,6 +43,41 @@ public class Main {
     }
 
     @Test
+    public void testSortedMapByValue() {
+        Map<String, Integer> treeMap = new HashMap<>();
+        treeMap.put("s", 2);
+        treeMap.put("w", 5);
+        treeMap.put("d", 1);
+        treeMap.put("f", 0);
+        treeMap.put("h", 9);
+        treeMap.put("q", 22);
+        treeMap.put("a", 25);
+        // 按照value排序
+        List<Map.Entry<String, Integer>> entryArrayList = new ArrayList<>(treeMap.entrySet());
+        // 注意看下面的逆序方式
+        Collections.sort(entryArrayList, Collections.reverseOrder(Comparator.comparing(Map.Entry::getValue)));
+        System.out.println("----------------------*------------------------------");
+        for (Map.Entry<String, Integer> entry : entryArrayList) {
+            System.out.println(entry.getKey() + " - " + entry.getValue());
+        }
+        System.out.println("----------------------*------------------------------");
+    }
+
+    @Test
+    public void testSortedMap() {
+        SortedMap<Integer, String> sortedMap = new TreeMap<>(new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return o1 < o2 ? -1 : (o1 > o2 ? 1 : 0);
+            }
+        });
+        sortedMap.put(2, "2");
+        sortedMap.put(1, "1");
+        sortedMap.put(3, "3");
+        System.out.println(sortedMap);
+    }
+
+    @Test
     public void testArrayList() {
         List<Order> orders = new ArrayList<>();
 

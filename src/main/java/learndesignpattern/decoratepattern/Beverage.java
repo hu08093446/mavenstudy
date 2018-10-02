@@ -1,4 +1,4 @@
-package decoratepattern;
+package learndesignpattern.decoratepattern;
 
 public abstract class Beverage {
     protected String description = "Unknown Beverage";

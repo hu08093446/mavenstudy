@@ -1,4 +1,4 @@
-package decoratepattern;
+package learndesignpattern.decoratepattern;
 
 import java.util.Random;
 

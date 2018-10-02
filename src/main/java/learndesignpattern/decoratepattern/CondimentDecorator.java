@@ -1,4 +1,4 @@
-package decoratepattern;
+package learndesignpattern.decoratepattern;
 
 public abstract class CondimentDecorator extends Beverage{
 

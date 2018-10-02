@@ -1,4 +1,4 @@
-package decoratepattern;
+package learndesignpattern.decoratepattern;
 
 public class Whip extends CondimentDecorator {
     public Whip(Beverage beverage) {

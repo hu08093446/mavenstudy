@@ -1,4 +1,4 @@
-package decoratepattern;
+package learndesignpattern.decoratepattern;
 
 public class DarkRoast extends Beverage {
     public DarkRoast() {

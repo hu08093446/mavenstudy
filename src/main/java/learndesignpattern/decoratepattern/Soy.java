@@ -1,4 +1,4 @@
-package decoratepattern;
+package learndesignpattern.decoratepattern;
 
 public class Soy extends CondimentDecorator {
     public Soy(Beverage beverage) {
