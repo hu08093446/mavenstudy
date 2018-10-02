@@ -27,6 +27,7 @@
         <spring.version>4.3.18.RELEASE</spring.version>
         <commonlang.version>3.7</commonlang.version>
         <lombok.verson>1.18.2</lombok.verson>
+        <commoncollection.version>4.1</commoncollection.version>
     </properties>
 
     <dependencies>
@@ -188,6 +189,15 @@
             <artifactId>aopalliance</artifactId>
             <version>1.0</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-collections4</artifactId>
+            <version>${commoncollection.version}</version>
+        </dependency>
+
+
+
 
         <!-- 日志文件管理包 -->
         <!-- log start -->
